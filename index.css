@@ -258,3 +258,9 @@ header {
         }
     }
 }
+
+.footer {
+    margin-top: 4rem;
+    height: 24rem;
+    background-color: var(--main-color-dark);
+}
