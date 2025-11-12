@@ -84,12 +84,12 @@ header {
     align-items: center;
     justify-content: center;
 
-    height: 32rem;
+    height: 20rem;
     width: 100%;
     padding-top: var(--header-height);
 
     @media only screen and (max-width: 1000px){
-        height: 106rem;
+        height: 80rem;
     }
 
     .about-text-container {
@@ -140,8 +140,8 @@ header {
         }
 
         img {
-            width: 20rem;
-            height: 20rem;
+            width: 16rem;
+            height: 16rem;
 
             border-radius: 4rem;
             border-color: var(--main-color-dark);
