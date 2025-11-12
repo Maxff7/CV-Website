@@ -19,6 +19,7 @@
   --paragraph-size: 1rem;
 
   --title-text-phone: 3rem;
+  --button-title-text-phone: 2.5rem;
   --paragraph-size-phone: 2rem;
 
   font-family: Helvetica;
@@ -83,12 +84,12 @@ header {
     align-items: center;
     justify-content: center;
 
-    height: 20rem;
+    height: 32rem;
     width: 100%;
     padding-top: var(--header-height);
 
     @media only screen and (max-width: 1000px){
-        height: 64rem;
+        height: 106rem;
     }
 
     .about-text-container {
@@ -139,8 +140,8 @@ header {
         }
 
         img {
-            width: 16rem;
-            height: 16rem;
+            width: 20rem;
+            height: 20rem;
 
             border-radius: 4rem;
             border-color: var(--main-color-dark);
@@ -204,9 +205,13 @@ header {
 
         @media only screen and (max-width: 1000px) {
             min-width: 30rem;
+            height: 22.5rem;
         }
 
         img {
+            align-self: center;
+            justify-self: center;
+
             width: 10rem;
             height: 10rem;
             margin-right: 0.5rem;
@@ -218,6 +223,11 @@ header {
 
             object-fit: cover;
             object-position: center;
+                    
+            @media only screen and (max-width: 1000px) {
+                width: 20rem;
+                height: 20rem;
+            }
         }
 
         .title-text {
@@ -228,6 +238,13 @@ header {
             font-weight: bold;
             word-wrap: normal;
             text-align: left;
+
+            @media only screen and (max-width: 1000px) {
+                font-size: var(--button-title-text-phone);
+                font-weight: 600;
+                letter-spacing: 1px;
+                padding: 1rem;
+            }
         }
     }
 
