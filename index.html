@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <title>Max Fijma Portfolio</title>
-        <script src="index.js" type="module"></script>
-    </head>
-    <body>
-        <header>
-            <div class="header-text">
-                Project portfolio - Max Fijma
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Max Fijma Portfolio</title>
+    <script src="index.js" type="module"></script>
+</head>
+
+<body>
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-info-modal" class="close">&times;</span>
+            <p class="title">Some title</p>
+            <p class="description">Some description</p>
+        </div>
+    </div>
+    <header>
+        <div class="header-text">
+            Project portfolio - Max Fijma
+        </div>
+        <button class="header-button">
+            Home
+        </button>
+        <button class="header-button">
+            Contact
+        </button>
+    </header>
+    <div class="about-section-container" id="about-section-container">
+        <div class="about-text-container">
+            <div class="about-text-title">
+                About me:
             </div>
-            <button class="header-button">
-                Home
-            </button>
-            <button class="header-button">
-                Contact
-            </button>
-        </header>
-        <div class="about-section-container" id="about-section-container">
-            <div class="about-text-container">
-                <div class="about-text-title">
-                    About me:
-                </div>
-                <div class="about-text">
-                    My name is Max Fijma, and I'm a fourth-year Game Development student at the Hogeschool van Amsterdam. While the main focus of what I'm studying is game development, I’ve also worked on all kinds of other projects using C#, Python, Java, React, TypeScript, HTML, CSS, and JavaScript.</br></br>
-                    Below are some important projects to showcase what I’ve worked on over the past few years.</br></br>
-                    Outside of coding, I love playing card games, especially Magic: the Gathering, every few weeks I get together with friends for Commander nights, and I also play online on MTG Arena. I’m really into games in general too, some of my current favorites are monster hunter games, like Monster Hunter World, Rise and Wilds. I also really love Balatro.
-                </div>
-            </div>
-            <div class="image-container">
-                <img src="Me.png">
+            <div class="about-text">
+                My name is Max Fijma, and I'm a fourth-year Game Development student at the Hogeschool van Amsterdam.
+                While the main focus of what I'm studying is game development, I’ve also worked on all kinds of other
+                projects using C#, Python, Java, React, TypeScript, HTML, CSS, and JavaScript.</br></br>
+                Below are some important projects to showcase what I’ve worked on over the past few years.</br></br>
+                Outside of coding, I love playing card games, especially Magic: the Gathering, every few weeks I get
+                together with friends for Commander nights, and I also play online on MTG Arena. I’m really into games
+                in general too, some of my current favorites are monster hunter games, like Monster Hunter World, Rise
+                and Wilds. I also really love Balatro.
             </div>
         </div>
-        <div class="box-container" id="projects-container">
-            <div class="projects-title" id="projects-title">
-                Projects:
-            </div>
+        <div class="image-container">
+            <img src="Me.png">
         </div>
-        <div class="footer">
-            
+    </div>
+    <div class="box-container" id="projects-container">
+        <div class="projects-title" id="projects-title">
+            Projects:
         </div>
-    </body>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+
 </html>

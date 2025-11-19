@@ -1,3 +1,21 @@
+var modal = document.getElementById("info-modal");
+var closeButton = document.getElementById("close-info-modal");
+
+closeButton.onclick = CloseModal;
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function OpenModal() {
+    modal.style.display = "flex";
+}
+
+function CloseModal() {
+    modal.style.display = "none";
+}
+
 function UseProjectData(data) {
     var infoArray = data.projects;
     console.log("InfoArray", infoArray)
@@ -22,6 +40,10 @@ function UseProjectData(data) {
         buttonDiv.appendChild(imageObject);
         buttonDiv.appendChild(titleDiv);
 
+        buttonDiv.onclick = function() {
+            OpenModal();
+        };
+
         buttonArray.push(buttonDiv);
 
         container.appendChild(buttonDiv);
@@ -33,4 +55,4 @@ fetch('./Projects.json')
     .then(data => {
         console.log("Data", data);
         UseProjectData(data);
-}).catch(error => console.error("Error loading JSON:", error));
+    }).catch(error => console.error("Error loading JSON:", error));
