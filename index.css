@@ -58,19 +58,28 @@ body {
     .modal-information {
         display: grid;
         grid-template-areas:
-            "header header"
-            "description content"
-            "footer footer";
-        grid-template-columns: 7fr 7fr;
+            "header header header"
+            "description empty image1"
+            "description empty image2";
+        grid-template-columns: 7fr 1fr 7fr;
+        
+        @media only screen and (max-width: 1000px) {
+            grid-template-areas:
+                "header"
+                "description"
+                "image1"
+                "image2";
+            grid-template-columns: 1fr;
+        }
 
-        .title {
+        .modal-title {
             color: var(--main-color-dark);
             font-size: var(--title-text-size);
             
             padding-left: 1.5rem;
             
             margin-top: 0.5rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
 
             grid-area: header;
 
@@ -79,15 +88,44 @@ body {
             }
         }
 
-        .description {
+        .modal-description {
             color: var(--main-color-dark);
             font-size: var(--paragraph-size);
-            padding-left: 2rem;
+            padding-left: 2.25rem;
+
+            grid-area: description;
 
             @media only screen and (max-width: 1000px) {
                 font-size: var(--paragraph-size-phone);
             }
-            margin-bottom: 2rem;
+        }
+
+        .modal-image-top {
+            grid-area: image1;
+        }
+
+        .modal-image-bottom {
+            grid-area: image2;
+        }
+
+        .modal-image-top, .modal-image-bottom {
+            place-self: center;
+
+            margin: 1rem;
+
+            height: 12rem;
+            width: 24rem;
+
+            object-fit: cover;
+            border: 0.125rem solid var(--main-color-dark);
+            border-radius: 0.25rem;
+            
+            @media only screen and (max-width: 1000px) {
+                margin-top: 4rem;
+                margin-bottom: 0;
+                width: 90%;
+                height: 24rem;
+            }
         }
     }
 }
