@@ -1,28 +1,28 @@
 :root {
-  --main-color-light: #eef4ff;
-  --secondary-color-light: #98adcc;
-  
-  --main-color-medium: #9893DA;
-  --secondary-color-medium: #BBBDF6;
+    --main-color-light: #eef4ff;
+    --secondary-color-light: #98adcc;
 
-  --main-color-dark: #1d2434;
-  --secondary-color-dark: #2D3A5F;
-  
-  --transition-color-dark: #5f709e;
+    --main-color-medium: #9893DA;
+    --secondary-color-medium: #BBBDF6;
 
-  --header-height: 6rem;
-  
-  --title-text-size: 3rem;
-  --subtitle-text-size: 2rem;
-  --button-title-text-size: 1.5rem;
-  
-  --paragraph-size: 1rem;
+    --main-color-dark: #1d2434;
+    --secondary-color-dark: #2D3A5F;
 
-  --title-text-phone: 3rem;
-  --button-title-text-phone: 2.5rem;
-  --paragraph-size-phone: 2rem;
+    --transition-color-dark: #5f709e;
 
-  font-family: Helvetica;
+    --header-height: 6rem;
+
+    --title-text-size: 3rem;
+    --subtitle-text-size: 2rem;
+    --button-title-text-size: 1.5rem;
+
+    --paragraph-size: 1rem;
+
+    --title-text-phone: 3rem;
+    --button-title-text-phone: 2.5rem;
+    --paragraph-size-phone: 2rem;
+
+    font-family: Helvetica;
 }
 
 body {
@@ -39,7 +39,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 
     transition: 2s;
 }
@@ -47,31 +47,47 @@ body {
 .modal-content {
     background-color: var(--main-color-light);
     margin: auto;
-    padding: 1.5rem;
+
     border: 0.05rem solid var(--main-color-medium);
     border-radius: 2rem;
+
     width: 80%;
     height: 80%;
+    padding: 1.5rem;
 
-    .title {
-        color: var(--main-color-dark);
-        font-size: var(--title-text-size);
-        padding-left: 1.5rem;
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
+    .modal-information {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "description content"
+            "footer footer";
+        grid-template-columns: 7fr 7fr;
 
-        @media only screen and (max-width: 1000px) {
-            font-size: var(--title-text-phone);
+        .title {
+            color: var(--main-color-dark);
+            font-size: var(--title-text-size);
+            
+            padding-left: 1.5rem;
+            
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+
+            grid-area: header;
+
+            @media only screen and (max-width: 1000px) {
+                font-size: var(--title-text-phone);
+            }
         }
-    }
 
-    .description{
-        color: var(--main-color-dark);
-        font-size: var(--paragraph-size);
-        padding-left: 2rem;
+        .description {
+            color: var(--main-color-dark);
+            font-size: var(--paragraph-size);
+            padding-left: 2rem;
 
-        @media only screen and (max-width: 1000px) {
-            font-size: var(--paragraph-size-phone);
+            @media only screen and (max-width: 1000px) {
+                font-size: var(--paragraph-size-phone);
+            }
+            margin-bottom: 2rem;
         }
     }
 }
@@ -108,14 +124,14 @@ header {
         color: var(--main-color-light);
         letter-spacing: 0.2rem;
         margin-left: 3rem;
-        
+
         @media only screen and (max-width: 1000px) {
             flex: 10;
             margin-left: 2rem;
             letter-spacing: 0;
         }
     }
-    
+
     .header-button {
         flex: 1;
         background: none;
@@ -131,8 +147,8 @@ header {
         transition: 0.2s;
     }
 
-    @media only screen and (min-width: 1000px){
-            .header-button:hover {
+    @media only screen and (min-width: 1000px) {
+        .header-button:hover {
             font-size: var(--subtitle-text-size);
             color: var(--secondary-color-light);
             cursor: pointer;
@@ -150,7 +166,7 @@ header {
     width: 100%;
     padding-top: var(--header-height);
 
-    @media only screen and (max-width: 1000px){
+    @media only screen and (max-width: 1000px) {
         height: 80rem;
     }
 
@@ -169,8 +185,8 @@ header {
             font-weight: bold;
 
             margin-bottom: 0.5rem;
-            
-            @media only screen and (max-width: 1000px){
+
+            @media only screen and (max-width: 1000px) {
                 font-size: var(--title-text-phone);
             }
         }
@@ -178,13 +194,13 @@ header {
         .about-text {
             color: var(--main-color-dark);
             font-size: var(--paragraph-size);
-            
-            @media only screen and (max-width: 1000px){
+
+            @media only screen and (max-width: 1000px) {
                 font-size: var(--paragraph-size-phone);
             }
         }
 
-        @media only screen and (max-width: 1000px){
+        @media only screen and (max-width: 1000px) {
             padding-top: 36rem;
         }
     }
@@ -195,7 +211,7 @@ header {
         align-items: center;
         justify-content: center;
 
-        @media only screen and (max-width: 1000px){
+        @media only screen and (max-width: 1000px) {
             position: absolute;
             z-index: -1;
             top: 10rem;
@@ -212,7 +228,7 @@ header {
             object-fit: cover;
             object-position: center;
 
-            @media only screen and (max-width: 1000px){
+            @media only screen and (max-width: 1000px) {
                 width: 28rem;
                 height: 28rem;
             }
@@ -241,13 +257,13 @@ header {
         font-size: var(--subtitle-text-size);
         font-weight: bold;
 
-            
-        @media only screen and (max-width: 1000px){
+
+        @media only screen and (max-width: 1000px) {
             font-size: var(--title-text-phone);
         }
     }
 
-    .project-box{
+    .project-box {
         display: flex;
         flex: 1;
 
@@ -262,7 +278,7 @@ header {
 
         background-color: var(--secondary-color-dark);
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        
+
         box-sizing: border-box;
 
         img {
@@ -280,7 +296,7 @@ header {
 
             object-fit: cover;
             object-position: center;
-                    
+
             @media only screen and (max-width: 1000px) {
                 width: 20rem;
                 height: 20rem;
@@ -309,7 +325,7 @@ header {
             height: 22.5rem;
         }
     }
-    
+
     @media only screen and (min-width: 1000px) {
         .project-box:hover {
             background-color: var(--transition-color-dark);
