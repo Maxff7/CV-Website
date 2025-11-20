@@ -2,71 +2,155 @@
     "projects" : [{
         "project-id" : 0,
         "project-name" : "Pool? You ain't got the balls.",
-        "project-image-url" : "https://img.itch.zone/aW1nLzE3NzIzNDUyLnBuZw==/315x250%23c/3PWCZJ.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url" : "https://img.itch.zone/aW1nLzE3NzIzNDUyLnBuZw==/315x250%23c/3PWCZJ.png",
+        "description" : "Pool you ain't got the balls is a game I made for a school assignment where the goal was to get as many plays on a game as possible, to do this I ended up advertising the game in various ways including using my connections to market the game and spreading information about the game in many places. The current amount of views as of writing this is still steady at a solid 214 and the amount of browser plays the game has is almost at 100. <br/><br/> The game is an An endless pool game where the goal is shoot balls into holes to keep up your total amount of shots you can still make so you can get as high a score as possible. Try to stay alive for as long as possible, trickshots are rewarded.",
+        "modal-image-url-1" : "Images/YAGTB/YAGTB-gameplay.png",
+        "modal-image-url-2" : "Images/YAGTB/YAGTB-title.png",
+        "github-url" : "",
+        "itch-url" : ""
     },
     {
         "project-id" : 1,
         "project-name" : "Wet Toast Grooves",
-        "project-image-url" : "https://img.itch.zone/aW1nLzE1OTcyNjE1LnBuZw==/315x250%23c/EQg3v3.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url" : "https://img.itch.zone/aW1nLzE1OTcyNjE1LnBuZw==/315x250%23c/EQg3v3.png",
+        "description" : "",
+        "modal-image-url-1" : "",
+        "modal-image-url-2" : "",
+        "github-url" : "",
+        "itch-url" : ""
     },
     {
         "project-id" : 2,
         "project-name" : "To the Moon",
-        "project-image-url" : "https://img.itch.zone/aW1nLzEwNzI4Mjc5LnBuZw==/315x250%23c/wkVjnh.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url" : "https://img.itch.zone/aW1nLzEwNzI4Mjc5LnBuZw==/315x250%23c/wkVjnh.png",
+        "description" : "",
+        "modal-image-url-1" : "",
+        "modal-image-url-2" : "",
+        "github-url" : "",
+        "itch-url" : ""
     },
     {
         "project-id" : 3,
         "project-name" : "Moving Together",
-        "project-image-url" : "https://img.itch.zone/aW1nLzE0MzgwMTc2LnBuZw==/315x250%23c/m%2FJv38.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url" : "https://img.itch.zone/aW1nLzE0MzgwMTc2LnBuZw==/315x250%23c/m%2FJv38.png",
+        "description" : "",
+        "modal-image-url-1" : "",
+        "modal-image-url-2" : "",
+        "github-url" : "",
+        "itch-url" : ""
     },
     {
         "project-id" : 4,
         "project-name" : "You are the bird",
-        "project-image-url" : "https://img.itch.zone/aW1nLzEyMDIzNTgxLnBuZw==/315x250%23c/OIlgXY.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url" : "https://img.itch.zone/aW1nLzEyMDIzNTgxLnBuZw==/315x250%23c/OIlgXY.png",
+        "description" : "",
+        "modal-image-url-1" : "",
+        "modal-image-url-2" : "",
+        "github-url" : "",
+        "itch-url" : ""
     },
     {
         "project-id" : 5,
         "project-name" : "First Person Rocket Launcher",
-        "project-image-url" : "https://img.itch.zone/aW1nLzExNDg2MDg3LnBuZw==/315x250%23c/Ig%2F3ix.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url" : "https://img.itch.zone/aW1nLzExNDg2MDg3LnBuZw==/315x250%23c/Ig%2F3ix.png",
+        "description" : "",
+        "modal-image-url-1" : "",
+        "modal-image-url-2" : "",
+        "github-url" : "",
+        "itch-url" : ""
     },
     {
         "project-id": 6,
         "project-name": "Go Home",
-        "project-image-url": "https://img.itch.zone/aW1nLzExMDY1Nzc2LnBuZw==/315x250%23c/OHXqga.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url": "https://img.itch.zone/aW1nLzExMDY1Nzc2LnBuZw==/315x250%23c/OHXqga.png",
+        "description" : "",
+        "modal-image-url-1" : "",
+        "modal-image-url-2" : "",
+        "github-url" : "",
+        "itch-url" : ""
     },
     {
         "project-id": 7,
         "project-name": "Smartmakker",
-        "project-image-url": "220px-Chill_guy_original_artwork.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url": "Images/Placeholder Image.png",
+        "description" : "",
+        "modal-image-url-1" : "",
+        "modal-image-url-2" : "",
+        "github-url" : "",
+        "itch-url" : ""
     },
     {
         "project-id": 8,
         "project-name": "Marov VR Maritime officer training",
-        "project-image-url": "220px-Chill_guy_original_artwork.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url": "Images/Placeholder Image.png",
+        "description" : "",
+        "modal-image-url-1" : "",
+        "modal-image-url-2" : "",
+        "github-url" : "",
+        "itch-url" : ""
     },
     {
         "project-id": 9,
         "project-name": "KIT History of J.P. Coen",
-        "project-image-url": "220px-Chill_guy_original_artwork.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url": "Images/Placeholder Image.png",
+        "description" : "",
+        "modal-image-url-1" : "",
+        "modal-image-url-2" : "",
+        "github-url" : "",
+        "itch-url" : ""
     },
     {
         "project-id": 10,
         "project-name": "VR tennis Project",
-        "project-image-url": "220px-Chill_guy_original_artwork.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url": "Images/Placeholder Image.png",
+        "description" : "",
+        "modal-image-url-1" : "",
+        "modal-image-url-2" : "",
+        "github-url" : "",
+        "itch-url" : ""
     },
     {
         "project-id": 11,
         "project-name": "RnD Reflection Shader",
-        "project-image-url": "220px-Chill_guy_original_artwork.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url": "Images/Placeholder Image.png",
+        "description" : "",
+        "modal-image-url-1" : "",
+        "modal-image-url-2" : "",
+        "github-url" : "",
+        "itch-url" : ""
     },
     {
         "project-id": 12,
         "project-name": "Modular weapon roguelike",
-        "project-image-url": "220px-Chill_guy_original_artwork.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url": "Images/Placeholder Image.png",
+        "description" : "",
+        "modal-image-url-1" : "",
+        "modal-image-url-2" : "",
+        "github-url" : "",
+        "itch-url" : ""
     },
     {
         "project-id": 13,
         "project-name": "CV and Portfolio Website",
-        "project-image-url": "220px-Chill_guy_original_artwork.png"
+        "project-type" : "Game Development Assignment",
+        "project-image-url": "Images/Placeholder Image.png",
+        "description" : "",
+        "modal-image-url-1" : "",
+        "modal-image-url-2" : "",
+        "github-url" : "",
+        "itch-url" : ""
     }]
 }

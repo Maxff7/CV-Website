@@ -100,15 +100,15 @@ body {
             }
         }
 
-        .modal-image-top {
+        .modal-image-1 {
             grid-area: image1;
         }
 
-        .modal-image-bottom {
+        .modal-image-2 {
             grid-area: image2;
         }
 
-        .modal-image-top, .modal-image-bottom {
+        .modal-image-1, .modal-image-2 {
             place-self: center;
 
             margin: 1rem;
@@ -196,26 +196,30 @@ header {
 }
 
 .about-section-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-areas:
+        "description image";
+    grid-template-columns: 2fr 1fr;
 
-    height: 20rem;
+    height: 24rem;
     width: 100%;
     padding-top: var(--header-height);
 
     @media only screen and (max-width: 1000px) {
         height: 80rem;
+        
+        grid-template-areas:
+            "image"
+            "description";
+        grid-template-columns: 1fr;
     }
 
     .about-text-container {
-        flex: 2;
-        justify-self: start;
-        align-self: flex-start;
+        place-self: center;
+        grid-area: description;
 
-        padding-left: 4rem;
-        padding-right: 2rem;
-        padding-top: 3rem;
+        padding: 3rem;
+        padding-top: 1rem;
 
         .about-text-title {
             color: var(--main-color-dark);
@@ -237,23 +241,15 @@ header {
                 font-size: var(--paragraph-size-phone);
             }
         }
-
-        @media only screen and (max-width: 1000px) {
-            padding-top: 36rem;
-        }
     }
 
     .image-container {
-        flex: 1;
+        grid-area: image;
+        padding: 2rem;
+
         display: flex;
         align-items: center;
         justify-content: center;
-
-        @media only screen and (max-width: 1000px) {
-            position: absolute;
-            z-index: -1;
-            top: 10rem;
-        }
 
         img {
             width: 16rem;

@@ -1,15 +1,44 @@
 var modal = document.getElementById("info-modal");
+var modalContent = document.getElementById("modal-info-content");
 var closeButton = document.getElementById("close-info-modal");
 
 closeButton.onclick = CloseModal;
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+window.onclick = function (event) {
+    if (event.target == modal) {
+        CloseModal();
+    }
 }
 
-function OpenModal() {
+function OpenModal(infoArray) {
+    console.log(infoArray);
+
     modal.style.display = "flex";
+    modalContent.innerHTML = null;
+
+    // Add Title
+    var modalTitleDiv = document.createElement('div');
+    modalTitleDiv.className = 'modal-title';
+    modalTitleDiv.innerHTML = infoArray["project-name"];
+
+    // Add Description
+    var modalDescDiv = document.createElement('div');
+    modalDescDiv.className = 'modal-description';
+    modalDescDiv.innerHTML = infoArray["description"];
+
+    // Add Images
+    var modalImage1 = document.createElement('img');
+    modalImage1.src = infoArray["modal-image-url-1"]
+    modalImage1.className = 'modal-image-1';
+    
+    var modalImage2 = document.createElement('img');
+    modalImage2.src = infoArray["modal-image-url-2"]
+    modalImage2.className = 'modal-image-2';
+
+    // Add to modal content
+    modalContent.appendChild(modalTitleDiv);
+    modalContent.appendChild(modalDescDiv);
+    modalContent.appendChild(modalImage1);
+    modalContent.appendChild(modalImage2);
 }
 
 function CloseModal() {
@@ -40,9 +69,11 @@ function UseProjectData(data) {
         buttonDiv.appendChild(imageObject);
         buttonDiv.appendChild(titleDiv);
 
+        buttonDiv.projectInfo = infoArray[i]
+
         buttonDiv.onclick = function() {
-            OpenModal();
-        };
+            OpenModal(this.projectInfo);
+        }
 
         buttonArray.push(buttonDiv);
 
