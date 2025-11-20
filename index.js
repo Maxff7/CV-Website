@@ -53,21 +53,31 @@ function UseProjectData(data) {
     var container = document.getElementById("projects-container")
 
     for (var i = 0; i < infoArray.length; ++i) {
+        // Add button for project
         var buttonDiv = document.createElement('button');
         buttonDiv.id = 'project-button' + i;
         buttonDiv.className = 'project-box';
 
+        // Add project image
         var imageObject = document.createElement('img');
         imageObject.src = infoArray[i]["project-image-url"];
         imageObject.id = 'project-image' + i;
 
+        // Add button title
         var titleDiv = document.createElement('div');
         titleDiv.id = 'title-div' + i;
         titleDiv.className = 'title-text';
         titleDiv.innerHTML = infoArray[i]["project-name"];
 
+        // Add project type
+        var typeDiv = document.createElement('div');
+        typeDiv.id = 'type-div' + i;
+        typeDiv.className = 'project-type';
+        typeDiv.innerHTML = infoArray[i]["project-type"];
+
         buttonDiv.appendChild(imageObject);
         buttonDiv.appendChild(titleDiv);
+        buttonDiv.appendChild(typeDiv);
 
         buttonDiv.projectInfo = infoArray[i]
 
