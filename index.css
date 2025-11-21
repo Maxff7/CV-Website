@@ -24,6 +24,7 @@
     --button-title-text-phone: 2.5rem;
     --button-smaller-phone: 1.5rem;
     --paragraph-size-phone: 2rem;
+    --paragraph-modal-phone: 1.25rem;
 
     font-family: Helvetica;
 }
@@ -44,107 +45,139 @@ body {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
 
-    transition: 2s;
-}
+    .close {
+        color: var(--secondary-color-light);
+        float: right;
+        font-size: var(--subtitle-text-size);
+        font-weight: bold;
 
-.modal-content {
-    background-color: var(--main-color-light);
-    margin: auto;
-
-    border: 0.05rem solid var(--main-color-medium);
-    border-radius: 2rem;
-
-    width: 80%;
-    height: 80%;
-    padding: 1.5rem;
-
-    .modal-information {
-        display: grid;
-        grid-template-areas:
-            "header header header"
-            "description empty image1"
-            "description empty image2";
-        grid-template-columns: 7fr 1fr 7fr;
-        
         @media only screen and (max-width: 1000px) {
+            font-size: var(--button-title-text-phone);
+        }
+    }
+
+    .close:hover,
+    .close:focus {
+        color: var(--main-color-dark);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .modal-content {
+        max-height: 100%;
+        overflow-y: auto;
+
+        background-color: var(--main-color-light);
+        margin: auto;
+
+        border: 0.05rem solid var(--main-color-medium);
+        border-radius: 2rem;
+
+        width: 80%;
+        height: 80%;
+        padding: 1.5rem;
+
+        .modal-information {
+            display: grid;
             grid-template-areas:
-                "header"
-                "description"
-                "image1"
-                "image2";
-            grid-template-columns: 1fr;
-        }
-
-        .modal-title {
-            color: var(--main-color-dark);
-            font-size: var(--title-text-size);
+                "header header header"
+                "description empty image1"
+                "links empty image2";
+            grid-template-columns: 7fr 1fr 7fr;
             
-            padding-left: 1.5rem;
-            
-            margin-top: 0.5rem;
-            margin-bottom: 2rem;
-
-            grid-area: header;
-
             @media only screen and (max-width: 1000px) {
-                font-size: var(--title-text-phone);
+                grid-template-areas:
+                    "header"
+                    "description"
+                    "image1"
+                    "image2"
+                    "links";
+                grid-template-columns: 1fr;
+                padding-top: 1rem;
+                padding-bottom: 3rem;
             }
-        }
 
-        .modal-description {
-            color: var(--main-color-dark);
-            font-size: var(--paragraph-size);
-            padding-left: 2.25rem;
+            .modal-title {
+                color: var(--main-color-dark);
+                font-size: var(--title-text-size);
+                
+                padding-left: 1.5rem;
+                
+                margin-top: 0.5rem;
+                margin-bottom: 2rem;
 
-            grid-area: description;
+                grid-area: header;
 
-            @media only screen and (max-width: 1000px) {
-                font-size: var(--paragraph-size-phone);
+                font-weight: bold;
+
+                @media only screen and (max-width: 1000px) {
+                    font-size: var(--title-text-phone);
+                }
             }
-        }
 
-        .modal-image-1 {
-            grid-area: image1;
-        }
+            .modal-description {
+                color: var(--main-color-dark);
+                font-size: var(--paragraph-size);
+                padding-left: 2.25rem;
 
-        .modal-image-2 {
-            grid-area: image2;
-        }
+                grid-area: description;
 
-        .modal-image-1, .modal-image-2 {
-            place-self: center;
+                @media only screen and (max-width: 1000px) {
+                    font-size: var(--paragraph-modal-phone);
+                }
+            }
 
-            margin: 1rem;
+            .modal-image-1 {
+                grid-area: image1;
+            }
 
-            height: 12rem;
-            width: 24rem;
+            .modal-image-2 {
+                grid-area: image2;
+            }
 
-            object-fit: cover;
-            border: 0.125rem solid var(--main-color-dark);
-            border-radius: 0.25rem;
-            
-            @media only screen and (max-width: 1000px) {
+            .modal-image-1, .modal-image-2 {
+                place-self: center;
+
+                margin: 1rem;
+
+                height: 12rem;
+                width: 24rem;
+
+                object-fit: cover;
+                border: 2px solid var(--main-color-dark);
+                border-radius: 0.25rem;
+                
+                @media only screen and (max-width: 1000px) {
+                    margin-top: 4rem;
+                    margin-bottom: 0;
+                    width: 90%;
+                    height: 24rem;
+                }
+            }
+
+            .modal-links{
                 margin-top: 4rem;
-                margin-bottom: 0;
-                width: 90%;
-                height: 24rem;
+                margin-bottom: 4rem;
+                grid-area: links;
+                place-self: center;
+
+                a {
+                    border: solid 2px var(--main-color-dark);
+                    border-radius: 0.25rem;
+
+                    padding: 1rem;
+
+                    margin: 2rem;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+
+                    text-align: center;
+                    font-style: none;
+                    color: var(--main-color-dark);
+                }
             }
         }
     }
-}
-
-.close {
-    color: var(--secondary-color-light);
-    float: right;
-    font-size: var(--subtitle-text-size);
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: var(--main-color-dark);
-    text-decoration: none;
-    cursor: pointer;
 }
 
 header {
@@ -373,8 +406,6 @@ header {
 
             @media only screen and (max-width: 1000px) {
                 font-size: var(--button-smaller-phone);
-                font-weight: 600;
-                letter-spacing: 1px;
             }
         }
 

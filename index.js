@@ -13,32 +13,66 @@ function OpenModal(infoArray) {
     console.log(infoArray);
 
     modal.style.display = "flex";
-    modalContent.innerHTML = null;
+    modalContent.innerHTML = "";
 
-    // Add Title
-    var modalTitleDiv = document.createElement('div');
-    modalTitleDiv.className = 'modal-title';
+    // Title always exists
+    var modalTitleDiv = document.createElement("div");
+    modalTitleDiv.className = "modal-title";
     modalTitleDiv.innerHTML = infoArray["project-name"];
-
-    // Add Description
-    var modalDescDiv = document.createElement('div');
-    modalDescDiv.className = 'modal-description';
-    modalDescDiv.innerHTML = infoArray["description"];
-
-    // Add Images
-    var modalImage1 = document.createElement('img');
-    modalImage1.src = infoArray["modal-image-url-1"]
-    modalImage1.className = 'modal-image-1';
-    
-    var modalImage2 = document.createElement('img');
-    modalImage2.src = infoArray["modal-image-url-2"]
-    modalImage2.className = 'modal-image-2';
-
-    // Add to modal content
     modalContent.appendChild(modalTitleDiv);
-    modalContent.appendChild(modalDescDiv);
-    modalContent.appendChild(modalImage1);
-    modalContent.appendChild(modalImage2);
+
+    // Description
+    if (infoArray["description"] && infoArray["description"].trim() !== "") {
+        var modalDescDiv = document.createElement("div");
+        modalDescDiv.className = "modal-description";
+        modalDescDiv.innerHTML = infoArray["description"];
+        modalContent.appendChild(modalDescDiv);
+    }
+
+    // Image 1
+    if (infoArray["modal-image-url-1"] && infoArray["modal-image-url-1"] !== "") {
+        var img1 = document.createElement("img");
+        img1.src = infoArray["modal-image-url-1"];
+        img1.className = "modal-image-1";
+        modalContent.appendChild(img1);
+    }
+
+    // Image 2
+    if (infoArray["modal-image-url-2"] && infoArray["modal-image-url-2"] !== "") {
+        var img2 = document.createElement("img");
+        img2.src = infoArray["modal-image-url-2"];
+        img2.className = "modal-image-2";
+        modalContent.appendChild(img2);
+    }
+
+    // Links GitHub And Itch
+    if (
+        (infoArray["github-url"] && infoArray["github-url"] !== "") ||
+        (infoArray["itch-url"] && infoArray["itch-url"] !== "")
+    ) {
+        var linkContainer = document.createElement("div");
+        linkContainer.className = "modal-links";
+
+        if (infoArray["github-url"]) {
+            var gitBtn = document.createElement("a");
+            gitBtn.href = infoArray["github-url"];
+            gitBtn.target = "_blank";
+            gitBtn.className = "modal-link-button";
+            gitBtn.innerHTML = "GitHub";
+            linkContainer.appendChild(gitBtn);
+        }
+
+        if (infoArray["itch-url"]) {
+            var itchBtn = document.createElement("a");
+            itchBtn.href = infoArray["itch-url"];
+            itchBtn.target = "_blank";
+            itchBtn.className = "modal-link-button";
+            itchBtn.innerHTML = "Play on Itch.io";
+            linkContainer.appendChild(itchBtn);
+        }
+
+        modalContent.appendChild(linkContainer);
+    }
 }
 
 function CloseModal() {
