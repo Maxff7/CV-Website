@@ -9,6 +9,16 @@ window.onclick = function (event) {
     }
 }
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 function OpenModal(infoArray) {
     console.log(infoArray);
 
@@ -58,7 +68,7 @@ function OpenModal(infoArray) {
             gitBtn.href = infoArray["github-url"];
             gitBtn.target = "_blank";
             gitBtn.className = "modal-link-button";
-            gitBtn.innerHTML = "GitHub";
+            gitBtn.innerHTML = "Check out the Git";
             linkContainer.appendChild(gitBtn);
         }
 
@@ -67,7 +77,7 @@ function OpenModal(infoArray) {
             itchBtn.href = infoArray["itch-url"];
             itchBtn.target = "_blank";
             itchBtn.className = "modal-link-button";
-            itchBtn.innerHTML = "Play on Itch.io";
+            itchBtn.innerHTML = "Test the Project";
             linkContainer.appendChild(itchBtn);
         }
 

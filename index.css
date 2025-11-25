@@ -46,8 +46,10 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
 
     .close {
+        position: fixed;
+        right: 10vw;
+
         color: var(--secondary-color-light);
-        float: right;
         font-size: var(--subtitle-text-size);
         font-weight: bold;
 
@@ -76,14 +78,22 @@ body {
         width: 80%;
         height: 80%;
         padding: 1.5rem;
+        
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        ::-webkit-scrollbar {
+            display: none;
+        }
 
         .modal-information {
             display: grid;
             grid-template-areas:
                 "header header header"
                 "description empty image1"
-                "links empty image2";
-            grid-template-columns: 7fr 1fr 7fr;
+                "description empty image2"
+                "links empty empty2";
+            grid-template-columns: 9fr 1fr 7fr;
             
             @media only screen and (max-width: 1000px) {
                 grid-template-areas:
@@ -140,8 +150,9 @@ body {
 
                 margin: 1rem;
 
-                height: 12rem;
-                width: 24rem;
+                height: 10rem;
+                width: 18rem;
+                margin-right: 2rem;
 
                 object-fit: cover;
                 border: 2px solid var(--main-color-dark);
@@ -157,12 +168,12 @@ body {
 
             .modal-links{
                 margin-top: 4rem;
-                margin-bottom: 4rem;
                 grid-area: links;
                 place-self: center;
 
                 a {
                     border: solid 2px var(--main-color-dark);
+                    background-color: var(--secondary-color-dark);
                     border-radius: 0.25rem;
 
                     padding: 1rem;
@@ -172,8 +183,8 @@ body {
                     margin-right: 1rem;
 
                     text-align: center;
-                    font-style: none;
-                    color: var(--main-color-dark);
+                    text-decoration: none;
+                    color: var(--main-color-light);
                 }
             }
         }
@@ -210,12 +221,14 @@ header {
         flex: 1;
         background: none;
         border: none;
+        text-align: center;
 
         margin: 0;
         padding: 0;
         margin-left: 1rem;
         margin-right: 1rem;
 
+        text-decoration: none;
         font-size: var(--button-title-text-size);
         color: var(--main-color-light);
         transition: 0.2s;
@@ -232,17 +245,20 @@ header {
 }
 
 .about-section-container {
+    justify-self: center;
+
     display: grid;
     grid-template-areas:
         "description image";
     grid-template-columns: 2fr 1fr;
 
     height: 24rem;
-    width: 100%;
+    width: 96%;
     padding-top: var(--header-height);
 
     @media only screen and (max-width: 1000px) {
         height: 80rem;
+        width: 100%;
         
         grid-template-areas:
             "image"
@@ -307,6 +323,7 @@ header {
 }
 
 .box-container {
+    padding-top: 2rem;
     justify-self: center;
     align-self: center;
 
@@ -315,6 +332,8 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     width: 95%;
+
+    scroll-margin: var(--header-height);
 
     .projects-title {
         height: 2rem;
@@ -422,6 +441,18 @@ header {
             cursor: pointer;
         }
     }
+}
+
+.contact-area {
+    padding-top: 4rem;
+    
+    text-align: center;
+    
+    font-size: var(--subtitle-text-size);
+    color: var(--main-color-dark);
+    font-weight: bold;
+
+    scroll-margin: var(--header-height);    
 }
 
 .footer {
