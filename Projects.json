@@ -2,57 +2,62 @@
     "projects" : [{
         "project-id" : 0,
         "project-name" : "Pool? You ain't got the balls.",
-        "project-type" : "Game Development Assignment",
+        "project-type" : "Game Development Assignment - 2025",
         "project-image-url" : "Images/YAGTB/YAGTB-title.png",
         "description" : "Pool you ain't got the balls is a game I made for a school assignment where the goal was to get as many plays on a game as possible, to do this I ended up advertising the game in various ways including using my connections to market the game and spreading information about the game in many places. The current amount of views as of writing this is still steady at a solid 214 and the amount of browser plays the game has is almost at 100. <br/><br/> The game is an endless pool game where the goal is shoot balls into holes to keep up your total amount of shots you can still make so you can get as high a score as possible. Try to stay alive for as long as possible, trickshots are rewarded.",
         "modal-image-url-1" : "Images/YAGTB/YAGTB-title.png",
         "modal-image-url-2" : "Images/YAGTB/YAGTB-gameplay.png",
         "github-url" : "",
-        "itch-url" : "https://maxff7.itch.io/pool-you-aint-got-the-balls"
+        "itch-url" : "https://maxff7.itch.io/pool-you-aint-got-the-balls",
+        "modal-background" : "#a2dbac"
     },
     {
         "project-id" : 1,
         "project-name" : "Wet Toast Grooves",
-        "project-type" : "Game Jam",
+        "project-type" : "Game Jam - 2024",
         "project-image-url" : "Images/WetToastGrooves/Cover.png",
         "description" : "Wet toast grooves is a simple game I made for a game jam in 2024. The challenge of a game jam is to make a game in a very short amount of time, in this case the amount of time I had to create this game was 4 days. <br/><br/> The theme for this game jam was nostalgia hits hard, my interpretation of this was to make a game with a simple pixel art style, which I was pretty comfortable in making. To get an idea for the gameplay I wanted to go for, I went for a different approach. The theme of the game jam was nostalgia based, but the name of the jam was: “Wierd game jam except it's spring.” which is why I went for a more weird approach with the theming of the game and I ended up coming up with the idea of a piece of toast fighting monsters underwater with the power of dance. <br/><br/> The main game consists of two parts, the attacking and the defending stage which switches every 10 seconds. In the defending phase you need to ward of the attacks of the enemy you are currently fighting by timing your blocks perfectly when they shoot their bullets at your character. In the attacking phase you need to try to get through the enemies walls by sending attack at them from all different sides. There are four different enemies you can fight all with different stats and attack patterns so the game doesn’t get stale and you need to think of strategies to beat each of them.",
         "modal-image-url-1" : "Images/WetToastGrooves/Cover.png",
         "modal-image-url-2" : "Images/WetToastGrooves/WetGame.png",
         "github-url" : "https://github.com/Maxff7/RythmRogue-Temp",
-        "itch-url" : "https://maxff7.itch.io/wet-toast-grooves"
+        "itch-url" : "https://maxff7.itch.io/wet-toast-grooves",
+        "modal-background" : "#72a8db"
     },
     {
         "project-id" : 2,
         "project-name" : "To the Moon",
-        "project-type" : "Game Development Assignment",
+        "project-type" : "Game Development Assignment - 2022",
         "project-image-url" : "Images/ToTheMoon/TTM-Title.png",
         "description" : "To The Moon is a game where you need to launch yourself up through a level, to eventually reach the top and land on the moon. During the game you will move through different areas in the level and you will encounter many challenges along your way. Do you think you can make it to the end of the stage, then try the game now. <br/><br/> To the Moon is a game that I made for a school assignment for game design, where we learned more about how to properly design games, the gameplay is comparable to some rage games such as Jump King, which I also based this game on a little, in reality the mechanics are quite simple but they end up coming together to make an interesting and gameplay experience. <br/><br/> Throughout the game you move through four different stages which progressively get more and more difficult, introducing new mechanics to play with and combining them to switch up the levels and make them feel distinct. <br/><br/> Sadly I do not have a browser build of this game, but if you have some time I would like to ask you to still try out this game as I think it’s a fun experience and I’m proud of the time I put into designing it.",
         "modal-image-url-1" : "Images/ToTheMoon/TTM-Title.png",
         "modal-image-url-2" : "Images/ToTheMoon/TTM-Level.png",
         "github-url" : "",
-        "itch-url" : "https://maxff7.itch.io/to-the-moon"
+        "itch-url" : "https://maxff7.itch.io/to-the-moon",
+        "modal-background" : "#addba2"
     },
     {
         "project-id" : 3,
         "project-name" : "Moving Together",
-        "project-type" : "Game Jam",
+        "project-type" : "Game Jam - 2023",
         "project-image-url" : "https://img.itch.zone/aW1nLzE0MzgwMTc2LnBuZw==/315x250%23c/m%2FJv38.png",
-        "description" : "",
-        "modal-image-url-1" : "",
-        "modal-image-url-2" : "",
+        "description" : "Moving together is a simple puzzle game I made for a game jam, the concept is that you control two penguins that move at the same time, that need to get to each other to get to the next level. It is a very simple puzzle game, where the main obstacle is the barriers and buttons that you will have to navigate to make the penguins reach one another without getting stuck in a specific part. </br></br> This isn’t one of the best games I’ve made, there are only three levels and looking back, the puzzles do not feel super well designed and a little too easy with even some possible soft locks if you don’t do them correctly. I will blame the time limit of this being a game jam game for those issues, but I do not agree with a lot of the choices I’ve made for this game. </br></br> All that being said, I still think that this game was a good learning experience for me, because it showed me that working with time pressure requires another way of planning and thinking.",
+        "modal-image-url-1" : "Images/MovingTogether/MTTitle.png",
+        "modal-image-url-2" : "Images/MovingTogether/MTLevel.png",
         "github-url" : "",
-        "itch-url" : "https://maxff7.itch.io/moving-together"
+        "itch-url" : "https://maxff7.itch.io/moving-together",
+        "modal-background" : "#c1d7e8"
     },
     {
         "project-id" : 4,
         "project-name" : "You are the bird",
-        "project-type" : "Game Jam",
+        "project-type" : "Game Jam - 2023",
         "project-image-url" : "https://img.itch.zone/aW1nLzEyMDIzNTgxLnBuZw==/315x250%23c/OIlgXY.png",
-        "description" : "",
+        "description" : "You are the bird is the project that I worked on for the very first <b>Game Jam</b> I took part in, the Jam lasted three days in total and in these three days I made this game including all the code and assets on my own using the unity game engine. It is a puzzle game where you play as a little bird who needs to find her eggs that have been hidden throughout the levels, the game has a general easter theme in it’s art because it was made for a spring game jam.</br></br> In the game you only get a limited amount of steps which is the exact amount of steps needed to win the level. The goal each level is to get to the egg that is hidden behind all the obstacles while only having one step remaining. Throughout the game more obstacles get created, such as snakes that make you lose an extra step if you step on them, or boxes that can only be destroyed if you step on them with an even or od amount of steps. The game is pretty tricky especially near the end of the game, but nothing insanely difficult. Near the end of the game you will need to start using the snakes to offset your steps which makes for an interesting new angle, using the enemies to beat the level.</br></br> While I do not think this is the most amazing project I have ever made, I do like this game because it’s the first time I worked on a Game Jam game and I ended up making a pretty fun little game that even got showcased in a review video of the Jam.",
         "modal-image-url-1" : "",
         "modal-image-url-2" : "",
         "github-url" : "",
-        "itch-url" : "https://maxff7.itch.io/you-are-the-bird"
+        "itch-url" : "https://maxff7.itch.io/you-are-the-bird",
+        "modal-background" : "#6ce674"
     },
     {
         "project-id" : 5,
@@ -63,94 +68,103 @@
         "modal-image-url-1" : "",
         "modal-image-url-2" : "",
         "github-url" : "",
-        "itch-url" : "https://maxff7.itch.io/first-person-rocket-launcher"
+        "itch-url" : "https://maxff7.itch.io/first-person-rocket-launcher",
+        "modal-background" : "#9594b3"
     },
     {
         "project-id": 6,
         "project-name": "Go Home",
-        "project-type" : "Game Development Assignment",
+        "project-type" : "Game Development Assignment - 2022",
         "project-image-url": "https://img.itch.zone/aW1nLzExMDY1Nzc2LnBuZw==/315x250%23c/OHXqga.png",
         "description" : "",
         "modal-image-url-1" : "",
         "modal-image-url-2" : "",
         "github-url" : "",
-        "itch-url" : "https://bram-van-den-dongen.itch.io/go-home"
+        "itch-url" : "https://bram-van-den-dongen.itch.io/go-home",
+        "modal-background" : "#ebb0e7"
     },
     {
         "project-id": 7,
         "project-name": "Smartmakker",
-        "project-type" : "AI Development Assignment",
+        "project-type" : "AI Development Assignment - 2023",
         "project-image-url": "Images/Placeholder Image.png",
         "description" : "",
         "modal-image-url-1" : "",
         "modal-image-url-2" : "",
         "github-url" : "",
-        "itch-url" : ""
+        "itch-url" : "",
+        "modal-background" : "#23731c"
     },
     {
         "project-id": 8,
         "project-name": "Marov VR Maritime officer training",
-        "project-type" : "VR Development Assignment",
+        "project-type" : "VR Development Assignment - 2025",
         "project-image-url": "Images/Placeholder Image.png",
         "description" : "",
         "modal-image-url-1" : "",
         "modal-image-url-2" : "",
         "github-url" : "",
-        "itch-url" : ""
+        "itch-url" : "",
+        "modal-background" : "#23731c"
     },
     {
         "project-id": 9,
         "project-name": "KIT History of J.P. Coen",
-        "project-type" : "VR Development Assignment",
+        "project-type" : "VR Development Assignment - 2024",
         "project-image-url": "Images/Placeholder Image.png",
         "description" : "",
         "modal-image-url-1" : "",
         "modal-image-url-2" : "",
         "github-url" : "",
-        "itch-url" : ""
+        "itch-url" : "",
+        "modal-background" : "#23731c"
     },
     {
         "project-id": 10,
         "project-name": "VR tennis Project",
-        "project-type" : "VR Development Assignment",
+        "project-type" : "VR Development Assignment - 2024",
         "project-image-url": "Images/Placeholder Image.png",
         "description" : "",
         "modal-image-url-1" : "",
         "modal-image-url-2" : "",
         "github-url" : "",
-        "itch-url" : ""
+        "itch-url" : "",
+        "modal-background" : "#23731c"
     },
     {
         "project-id": 11,
         "project-name": "RnD Reflection Shader",
-        "project-type" : "Shader Development Assignment",
+        "project-type" : "Shader Development Assignment - 2025",
         "project-image-url": "Images/Placeholder Image.png",
         "description" : "",
         "modal-image-url-1" : "",
         "modal-image-url-2" : "",
         "github-url" : "https://github.com/Maxff7/RD-ReflectionShader",
-        "itch-url" : ""
+        "itch-url" : "",
+        "modal-background" : "#23731c"
     },
     {
         "project-id": 12,
         "project-name": "Modular weapon roguelike",
-        "project-type" : "Personal game project",
+        "project-type" : "Personal game project - 2024",
         "project-image-url": "Images/Placeholder Image.png",
         "description" : "",
         "modal-image-url-1" : "",
         "modal-image-url-2" : "",
-        "github-url" : "",
-        "itch-url" : ""
+        "github-url" : "https://github.com/Maxff7/modular-weapon-rogue",
+        "itch-url" : "",
+        "modal-background" : "#23731c"
     },
     {
         "project-id": 13,
         "project-name": "CV and Portfolio Website",
-        "project-type" : "Web Development Assignment",
+        "project-type" : "Web Development Assignment - 2025",
         "project-image-url": "Images/Me.png",
         "description" : "This website is also one of the projects I've worked on of course. It's the first web development project I've worked on in a while, and working on it has tought me a lot about how to make websites, work with javascript and style properly using CSS. <br/><br/> I don't think this is the best website ever made of course, but I am very proud of what I was able to accomplish from very little prior knowledge of Javascript and HTML. I have of course in the past worked with REACT and Typescript which this is very similar to, but it was still a new experience and I'm glad I worked on this site.",
         "modal-image-url-1" : "Images/CV_website/TopW.png",
         "modal-image-url-2" : "Images/CV_website/Projects.png",
         "github-url" : "https://github.com/Maxff7/CV-Website",
-        "itch-url" : "https://maxff7.github.io/CV-Website/"
+        "itch-url" : "https://maxff7.github.io/CV-Website/",
+        "modal-background" : ""
     }]
 }

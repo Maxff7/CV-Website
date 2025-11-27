@@ -1,5 +1,6 @@
 var modal = document.getElementById("info-modal");
-var modalContent = document.getElementById("modal-info-content");
+var modalContent = document.getElementById("modal-content");
+var modalInfoContent = document.getElementById("modal-info-content");
 var closeButton = document.getElementById("close-info-modal");
 
 closeButton.onclick = CloseModal;
@@ -23,20 +24,26 @@ function OpenModal(infoArray) {
     console.log(infoArray);
 
     modal.style.display = "flex";
-    modalContent.innerHTML = "";
+    modalInfoContent.innerHTML = "";
+
+    if (infoArray["modal-background"] !== ""){
+        modalContent.style.backgroundColor = infoArray["modal-background"]; 
+    } else {
+        modalContent.style.backgroundColor = "#9fcaf3"
+    }
 
     // Title always exists
     var modalTitleDiv = document.createElement("div");
     modalTitleDiv.className = "modal-title";
     modalTitleDiv.innerHTML = infoArray["project-name"];
-    modalContent.appendChild(modalTitleDiv);
+    modalInfoContent.appendChild(modalTitleDiv);
 
     // Description
     if (infoArray["description"] && infoArray["description"].trim() !== "") {
         var modalDescDiv = document.createElement("div");
         modalDescDiv.className = "modal-description";
         modalDescDiv.innerHTML = infoArray["description"];
-        modalContent.appendChild(modalDescDiv);
+        modalInfoContent.appendChild(modalDescDiv);
     }
 
     // Image 1
@@ -44,7 +51,7 @@ function OpenModal(infoArray) {
         var img1 = document.createElement("img");
         img1.src = infoArray["modal-image-url-1"];
         img1.className = "modal-image-1";
-        modalContent.appendChild(img1);
+        modalInfoContent.appendChild(img1);
     }
 
     // Image 2
@@ -52,7 +59,7 @@ function OpenModal(infoArray) {
         var img2 = document.createElement("img");
         img2.src = infoArray["modal-image-url-2"];
         img2.className = "modal-image-2";
-        modalContent.appendChild(img2);
+        modalInfoContent.appendChild(img2);
     }
 
     // Links GitHub And Itch
@@ -81,7 +88,7 @@ function OpenModal(infoArray) {
             linkContainer.appendChild(itchBtn);
         }
 
-        modalContent.appendChild(linkContainer);
+        modalInfoContent.appendChild(linkContainer);
     }
 }
 

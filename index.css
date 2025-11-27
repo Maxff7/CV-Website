@@ -10,6 +10,8 @@
 
     --transition-color-dark: #5f709e;
 
+    --color-modal: #9fcaf3;
+
     --header-height: 6rem;
 
     --title-text-size: 3rem;
@@ -23,7 +25,7 @@
     --title-text-phone: 3rem;
     --button-title-text-phone: 2.5rem;
     --button-smaller-phone: 1.5rem;
-    --paragraph-size-phone: 2rem;
+    --paragraph-size-phone: 0.75rem;
     --paragraph-modal-phone: 1.25rem;
 
     font-family: Helvetica;
@@ -69,14 +71,13 @@ body {
         max-height: 100%;
         overflow-y: auto;
 
-        background-color: var(--main-color-light);
         margin: auto;
 
-        border: 0.05rem solid var(--main-color-medium);
+        border: 0.05rem solid var(--main-color-dark);
         border-radius: 2rem;
 
         width: 80%;
-        height: 80%;
+        height: 84%;
         padding: 1.5rem;
         
 
@@ -252,12 +253,12 @@ header {
         "description image";
     grid-template-columns: 2fr 1fr;
 
-    height: 24rem;
+    min-height: 24rem;
     width: 96%;
     padding-top: var(--header-height);
 
     @media only screen and (max-width: 1000px) {
-        height: 80rem;
+        min-height: 80rem;
         width: 100%;
         
         grid-template-areas:
@@ -271,7 +272,7 @@ header {
         grid-area: description;
 
         padding: 3rem;
-        padding-top: 1rem;
+        padding-top: 2rem;
 
         .about-text-title {
             color: var(--main-color-dark);
