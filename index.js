@@ -96,7 +96,7 @@ function CloseModal() {
     modal.style.display = "none";
 }
 
-function UseProjectData(data) {
+function CreateProjectButtons(data) {
     var infoArray = data.projects;
     console.log("InfoArray", infoArray)
     var buttonArray = [];
@@ -104,6 +104,11 @@ function UseProjectData(data) {
     var container = document.getElementById("projects-container")
 
     for (var i = 0; i < infoArray.length; ++i) {
+        // Don't add the project if there is no description
+        if (infoArray[i].description == "") {
+            continue;
+        }
+
         // Add button for project
         var buttonDiv = document.createElement('button');
         buttonDiv.id = 'project-button' + i;
@@ -146,5 +151,5 @@ fetch('./Projects.json')
     .then(response => response.json())
     .then(data => {
         console.log("Data", data);
-        UseProjectData(data);
+        CreateProjectButtons(data);
     }).catch(error => console.error("Error loading JSON:", error));
