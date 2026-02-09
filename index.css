@@ -447,13 +447,103 @@ header {
 .contact-area {
     padding-top: 4rem;
     
-    text-align: center;
+    display: grid;
+    grid-template-areas:
+        "Title"
+        "Paragraph"
+        "Email";
     
-    font-size: var(--subtitle-text-size);
-    color: var(--main-color-dark);
-    font-weight: bold;
+    scroll-margin: var(--header-height);
 
-    scroll-margin: var(--header-height);    
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+
+    .contact-title {
+        grid-area: Title;
+        text-align: center;
+    
+        font-size: var(--subtitle-text-size);
+        color: var(--main-color-dark);
+        font-weight: bold;
+
+        width: 100%;
+    }
+
+    .contact-text{
+        grid-area: Paragraph;
+        text-align: center;
+    
+        font-size: var(--button-title-text-size);
+        color: var(--main-color-dark);
+
+        width: 100%;
+        margin: 1.5rem 0 2.5rem 0;
+    }
+
+    .contact-email {
+        background-color: var(--secondary-color-dark);
+        padding: 2rem;
+        grid-area: Email;
+        display: grid;
+        place-items: center;
+        width: 175%;
+
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 4rem;
+
+        .contact-form {
+            margin: 2rem 0 1rem 0;;
+            width: 95%;
+            display: grid;
+            grid-template-areas: 
+                "Name"
+                "Email"
+                "Message"
+                "Submit";
+            grid-template-columns: 1fr;
+
+            .name {
+                grid-area: Name;
+                height: 1.5rem;
+                margin-bottom: 0.25rem;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                border: solid 0.125rem --main-color-dark;
+                border-radius: 0.25rem;
+            }
+
+            .email {
+                grid-area: Email;
+                height: 1.5rem;
+                margin-bottom: 1rem;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                border: solid 0.125rem --main-color-dark;
+                border-radius: 0.25rem;
+            }
+
+            .message {
+                resize: none;
+                place-self: center;
+                margin-bottom: 2rem;
+                height: 18rem;
+                width: 100%;
+                grid-area: Message;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                border: solid 0.125rem --main-color-dark;
+                border-radius: 0.25rem;
+            }
+
+            .submit {
+                grid-area: Submit;
+                width: 3rem;
+                height: 2rem;
+                place-self: center;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                border: solid 0.125rem --main-color-dark;
+                border-radius: 0.25rem;
+            }
+        }
+    }
 }
 
 .footer {

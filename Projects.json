@@ -7,9 +7,45 @@
         "description" : "Pool you ain't got the balls is a game I made for a school assignment where the goal was to get as many plays on a game as possible, to do this I ended up advertising the game in various ways including using my connections to market the game and spreading information about the game in many places. The current amount of views as of writing this is still steady at a solid 214 and the amount of browser plays the game has is almost at 100. <br/><br/> The game is an endless pool game where the goal is shoot balls into holes to keep up your total amount of shots you can still make so you can get as high a score as possible. Try to stay alive for as long as possible, trickshots are rewarded.",
         "modal-image-url-1" : "Images/YAGTB/YAGTB-title.png",
         "modal-image-url-2" : "Images/YAGTB/YAGTB-gameplay.png",
-        "github-url" : "",
+        "github-url" : "https://github.com/Maxff7/YAGTB",
         "itch-url" : "https://maxff7.itch.io/pool-you-aint-got-the-balls",
         "modal-background" : "#a2dbac"
+    },
+    {
+        "project-id": 11,
+        "project-name": "RnD Reflection Shader",
+        "project-type" : "Shader Development Assignment - 2025",
+        "project-image-url": "Images/RnD/ReflectionVectorNormal.png",
+        "description" : "This was a project I made for a school assignment where I researched and worked on a shader to simulate reflections. To do this I looked into several options to make the shader such as screenspace reflections, raytracing and using cube maps to simulate reflections. </br></br> The project was mostly based on doing a lot of research. We had to construct a research paper about a topic that interested us within game development. I myself enjoy working on shaders a lot, because they perfectly blend programming and art with one another in a way that can be really satisfying when you get them to look really good. This is why I wanted to work on a shader for this project, and a reflection shader was the perfect type of shader that I could sink my teeth into. </br></br> To create this shader I looked into several different ways of creating reflection shaders such as screenspace reflection, cubemap reflection and raytracing. For the project itself I ended up doing a lot of research into screenspace and cubemap reflections, because I found that these types of shaders had the most merit, but there was also a lot of research I did into more general parts of shaders such as normal maps and blending textures together. </br></br> By the end of the project I ended up with a great looking shader that created nice reflections using cubemaps.",
+        "modal-image-url-1" : "Images/RnD/BallFinalProduct.png",
+        "modal-image-url-2" : "Images/RnD/NormalShowFinal.png",
+        "github-url" : "https://github.com/Maxff7/RD-ReflectionShader",
+        "itch-url" : "https://hbo-ict-codelabs.dev.hihva.nl/gd-game-database/en/blog/max_fijma/",
+        "modal-background" : "#88C8FF"
+    },
+    {
+        "project-id" : 2,
+        "project-name" : "To the Moon",
+        "project-type" : "Game Development Assignment - 2022",
+        "project-image-url" : "Images/ToTheMoon/TTM-Title.png",
+        "description" : "To The Moon is a game where you need to launch yourself up through a level, to eventually reach the top and land on the moon. During the game you will move through different areas in the level and you will encounter many challenges along your way. Do you think you can make it to the end of the stage, then try the game now. <br/><br/> To the Moon is a game that I made for a school assignment for game design, where we learned more about how to properly design games, the gameplay is comparable to some rage games such as Jump King, which I also based this game on a little, in reality the mechanics are quite simple but they end up coming together to make an interesting and gameplay experience. <br/><br/> Throughout the game you move through four different stages which progressively get more and more difficult, introducing new mechanics to play with and combining them to switch up the levels and make them feel distinct. <br/><br/> Sadly I do not have a browser build of this game, but if you have some time I would like to ask you to still try out this game as I think it’s a fun experience and I’m proud of the time I put into designing it.",
+        "modal-image-url-1" : "Images/ToTheMoon/TTM-Title.png",
+        "modal-image-url-2" : "Images/ToTheMoon/TTM-Level.png",
+        "github-url" : "",
+        "itch-url" : "https://maxff7.itch.io/to-the-moon",
+        "modal-background" : "#addba2"
+    },
+    {
+        "project-id": 9,
+        "project-name": "KIT History of J.P. Coen",
+        "project-type" : "VR Development Assignment - 2024",
+        "project-image-url": "Images/KIT/KITCover.png",
+        "description" : "This was a VR project school assignment made using Unity Game Engine, together with of a team of other students for the KIT museum, where we made a VR experience based on the history of the VOC and J.P Coen. </br></br> My main task for this project was working on 3D models and shaders that could be used in the experience. The task I worked the most on during this project was a shader that simulated water. This shader was made to look like waves in the ocean, and was able to be customized in several ways. The color of both the water itself and the highlights could be changed, as well as the frequency of the waves, positions of the waves (Through a noise texture) and the speed at which the water moved. </br></br> Aside from this I also worked on some 3D models, such as a model for a cart and a model for the nutmeg used in one of the levels. I also worked on some of the more general XR setup and features, but my main task was helping with the visuals.",
+        "modal-image-url-1" : "Images/KIT/KITCart.png",
+        "modal-image-url-2" : "Images/KIT/KITShader.png",
+        "github-url" : "",
+        "itch-url" : "https://youtu.be/q8XsaVKNgRI",
+        "modal-background" : "#E3E1C8"
     },
     {
         "project-id" : 1,
@@ -24,16 +60,16 @@
         "modal-background" : "#72a8db"
     },
     {
-        "project-id" : 2,
-        "project-name" : "To the Moon",
-        "project-type" : "Game Development Assignment - 2022",
-        "project-image-url" : "Images/ToTheMoon/TTM-Title.png",
-        "description" : "To The Moon is a game where you need to launch yourself up through a level, to eventually reach the top and land on the moon. During the game you will move through different areas in the level and you will encounter many challenges along your way. Do you think you can make it to the end of the stage, then try the game now. <br/><br/> To the Moon is a game that I made for a school assignment for game design, where we learned more about how to properly design games, the gameplay is comparable to some rage games such as Jump King, which I also based this game on a little, in reality the mechanics are quite simple but they end up coming together to make an interesting and gameplay experience. <br/><br/> Throughout the game you move through four different stages which progressively get more and more difficult, introducing new mechanics to play with and combining them to switch up the levels and make them feel distinct. <br/><br/> Sadly I do not have a browser build of this game, but if you have some time I would like to ask you to still try out this game as I think it’s a fun experience and I’m proud of the time I put into designing it.",
-        "modal-image-url-1" : "Images/ToTheMoon/TTM-Title.png",
-        "modal-image-url-2" : "Images/ToTheMoon/TTM-Level.png",
+        "project-id": 8,
+        "project-name": "Marov VR Maritime officer training",
+        "project-type" : "VR Development Assignment - 2025",
+        "project-image-url": "Images/MaroffVR/MAFCover.png",
+        "description" : "This was a VR project school assignment made together with of a team of other students in Unity Game Engine, as a training software for the The Maritime Officer Degree Program at the University of Applied Sciences in Amsterdam. </br></br> The goal of this assignment was to work on a project created by a previous group and add a new level to the project while cleaning up the code and making the project a lot more accessible to work with. The project we were give was worked on by two previous teams and was a little spagetthi coded, we wanted to add a new level system and make sure that the levels would be able to load seamlessly into the same scene. In the end we decided to create a new project in the newest version of Unity Game Engine and reuse what we could from the old project, while remaking any parts that were unclearly written or that didn't quite work properly with the new level system ourselves. By doing this we ended up with a full project, with 3 levels added to the same scene and the ability to easily add new levels using our new level system. </br></br> My main task in this project was creating 3D models and making them look great and work correctly in the scene. This is the project where I made my best 3D model to this date, that being the engine of the ship, consisting of many interlocking parts and being based on a real engine of a ship. During this project I also took the lead on a lot of things and I was the main communications person of the team which allowed me to learn a lot about contact with clients and stakeholders.",
+        "modal-image-url-1" : "Images/MaroffVR/MAFEngine.png",
+        "modal-image-url-2" : "Images/MaroffVR/MAFScene.png",
         "github-url" : "",
-        "itch-url" : "https://maxff7.itch.io/to-the-moon",
-        "modal-background" : "#addba2"
+        "itch-url" : "",
+        "modal-background" : "#6990d1"
     },
     {
         "project-id" : 3,
@@ -93,31 +129,7 @@
         "modal-image-url-2" : "",
         "github-url" : "",
         "itch-url" : "",
-        "modal-background" : "#23731c"
-    },
-    {
-        "project-id": 8,
-        "project-name": "Marov VR Maritime officer training",
-        "project-type" : "VR Development Assignment - 2025",
-        "project-image-url": "Images/Placeholder Image.png",
-        "description" : "",
-        "modal-image-url-1" : "",
-        "modal-image-url-2" : "",
-        "github-url" : "",
-        "itch-url" : "",
-        "modal-background" : "#23731c"
-    },
-    {
-        "project-id": 9,
-        "project-name": "KIT History of J.P. Coen",
-        "project-type" : "VR Development Assignment - 2024",
-        "project-image-url": "Images/Placeholder Image.png",
-        "description" : "",
-        "modal-image-url-1" : "",
-        "modal-image-url-2" : "",
-        "github-url" : "",
-        "itch-url" : "",
-        "modal-background" : "#23731c"
+        "modal-background" : ""
     },
     {
         "project-id": 10,
@@ -129,19 +141,7 @@
         "modal-image-url-2" : "",
         "github-url" : "",
         "itch-url" : "",
-        "modal-background" : "#23731c"
-    },
-    {
-        "project-id": 11,
-        "project-name": "RnD Reflection Shader",
-        "project-type" : "Shader Development Assignment - 2025",
-        "project-image-url": "Images/Placeholder Image.png",
-        "description" : "",
-        "modal-image-url-1" : "",
-        "modal-image-url-2" : "",
-        "github-url" : "https://github.com/Maxff7/RD-ReflectionShader",
-        "itch-url" : "",
-        "modal-background" : "#23731c"
+        "modal-background" : ""
     },
     {
         "project-id": 12,
@@ -153,7 +153,7 @@
         "modal-image-url-2" : "",
         "github-url" : "https://github.com/Maxff7/modular-weapon-rogue",
         "itch-url" : "",
-        "modal-background" : "#23731c"
+        "modal-background" : ""
     },
     {
         "project-id": 13,

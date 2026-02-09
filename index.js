@@ -84,7 +84,7 @@ function OpenModal(infoArray) {
             itchBtn.href = infoArray["itch-url"];
             itchBtn.target = "_blank";
             itchBtn.className = "modal-link-button";
-            itchBtn.innerHTML = "Test the Project";
+            itchBtn.innerHTML = "Look at the Project";
             linkContainer.appendChild(itchBtn);
         }
 
@@ -153,3 +153,21 @@ fetch('./Projects.json')
         console.log("Data", data);
         CreateProjectButtons(data);
     }).catch(error => console.error("Error loading JSON:", error));
+
+emailjs.init("Dh8dXPUKsihPwAD5H");
+
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_jfpek2b",
+        "template_o7o1acl",
+        this
+    ).then(() => {
+        alert("Message sent!");
+        this.reset();
+    }).catch(err => {
+        console.error(err);
+        alert("Failed to send message");
+    });
+});
